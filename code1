@@ -1,0 +1,15 @@
+create database studentdetails;
+use studentdetails;
+create table student(
+student_id int primary key,
+student_name varchar(50),
+student_year varchar(50),
+student_location varchar(50)
+);
+insert into student value(1,'vasanth','IV','Trichy');
+insert into student value(2,'Rahul','IV','chennai');
+insert into student value(3,'surya','IV','madurai');
+insert into student value(4,'raja','IV','dindigul');
+insert into student value(5,'pranesh','IV','chennai');
+select*from student
+
