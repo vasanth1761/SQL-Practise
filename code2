@@ -1,0 +1,22 @@
+create database BANK;
+use  BANK;
+CREATE TABLE BANK_1(
+holder_id int primary key ,
+holder_name varchar(30),
+holder_accountnumber varchar(50)
+);
+insert into bank_1 value(1,'vasanth',12345678);
+insert into bank_1 value(2,'pranesh',987654321);
+insert into bank_1 value(3,'venki',32145678);
+insert into bank_1 value(4,'raja',98765435);
+insert into bank_1 value(5,'virat',08765567);
+alter table bank_1 add column location varchar(30);
+update bank_1
+set location='trichy' where holder_id=1;
+update bank_1
+set location ='chennai' where holder_id=5;
+update bank_1
+set location='madurai' where holder_id=4;
+
+
+select*from bank_1;
