@@ -1,0 +1,14 @@
+create database library;
+use library;
+create table details(
+library_id  varchar(50) primary key,
+user_name varchar(50),
+book_name varchar(50),
+phone_number varchar(50)
+);
+insert into details value(1,"vasanth","harry porter",9876543210);
+insert into details value(2,"surya","harry porter",9996543210);
+insert into details value(3,"venki","harry porter",9875673210);
+insert into details value(4,"bharath","harry porter",9765543210);
+insert into details value(5,"vikki","harry porter",9876543999);
+select*from details
